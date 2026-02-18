@@ -779,7 +779,16 @@ button:disabled {
 }
 
 @media (min-width: 761px) and (max-width: 1400px), (min-width: 761px) and (max-height: 980px) {
+  .app {
+    padding: 0;
+  }
+
   .table-shell {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
     grid-template-columns: minmax(170px, 1fr) auto minmax(170px, 1fr);
     grid-template-rows: auto auto minmax(190px, auto) auto auto auto;
     column-gap: 0.9rem;
