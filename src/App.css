@@ -778,15 +778,15 @@ button:disabled {
   }
 }
 
-@media (min-width: 761px) and (max-width: 1180px) {
+@media (min-width: 761px) and (max-width: 1400px), (min-width: 761px) and (max-height: 980px) {
   .table-shell {
-    grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+    grid-template-columns: minmax(170px, 1fr) auto minmax(170px, 1fr);
     grid-template-rows: auto auto minmax(190px, auto) auto auto auto;
     column-gap: 0.9rem;
   }
 
   .table-shell.no-hand {
-    grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+    grid-template-columns: minmax(170px, 1fr) auto minmax(170px, 1fr);
     grid-template-rows: auto auto minmax(190px, auto) auto auto auto;
   }
 
@@ -802,7 +802,7 @@ button:disabled {
     grid-column: 2;
     grid-row: 3;
     align-self: center;
-    justify-self: stretch;
+    justify-self: center;
   }
 
   .dealer-lane .cards {
@@ -814,7 +814,7 @@ button:disabled {
     grid-row: 3;
     align-self: center;
     justify-self: center;
-    width: 100%;
+    width: min(220px, 100%);
   }
 
   .bet-pit,
